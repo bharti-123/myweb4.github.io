@@ -1,0 +1,112 @@
+
+*{
+
+margin: 0px;
+padding: 0px;
+
+
+}
+
+
+body{
+
+background-image: url(../dos.jpg);
+background-size: cover;
+background-position: center;
+opacity: 0.8;
+
+
+}
+
+
+.menu{
+
+	background:rgb(0,100,0);
+	text-align: center;
+
+}
+
+
+.menu ul{
+
+display: inline-flex;
+list-style: none;
+color: #fff;
+
+}
+
+.menu ul li{
+
+	width: 150px;
+	margin: 15px;
+	padding: 15px;
+}
+
+.menu ul li a{
+text-decoration: none;
+color: white;
+
+}
+
+.active, .menu ul li:hover{
+
+	background-color: red;
+	border:3px;
+
+}
+
+.sub-menu-1
+{
+
+	display: none;
+}
+
+.menu ul li:hover .sub-menu-1
+{
+ 
+ display: block;
+ position: absolute;
+ background:rgb(0,100,0);
+ margin-top: 15px;
+ margin-left: -15px;
+}
+
+.menu ul li:hover .sub-menu-1 ul {
+
+display: block;
+
+}
+
+.menu ul li:hover .sub-menu-1 ul li{
+
+	width: 150px;
+	padding: 10px;
+	border-bottom:  1px dotted #fff;
+	background:transparent;
+	border-radius: 0;
+	text-align: left;
+}
+
+.menu ul li:hover .sub-menu-1 ul li:last-child
+{
+ border-bottom: none;
+}
+
+.menu ul li:hover .sub-menu-1 ul li a:hover{
+
+	color: yellow;
+}
+
+.sub-menu-2
+{
+   display: none;
+}
+
+.hover-me:hover .sub-menu-2
+{
+	display: block;
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 140px;      
+    background-color: rgba(0,100,0);
+}
